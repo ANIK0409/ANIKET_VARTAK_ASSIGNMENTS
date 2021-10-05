@@ -1,0 +1,18 @@
+
+p{
+	background-color: lightcyan;
+	padding-left: 2px;
+}
+
+p.thick_border{
+	border-width: 6px;
+	border-style: solid;
+}
+p.thin_border{
+	border-width: 4px;
+	border-style: solid;
+}
+p.border{
+	border-width: 2px;
+	border-style: solid;
+}

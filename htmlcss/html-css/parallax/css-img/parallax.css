@@ -1,0 +1,112 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+.pic1, .pic2, .pic3, .pic4, .pic5, .pic6{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pic1{
+  background-image:url('avv.jpg');
+  min-height:100%;
+}
+
+.pic2{
+  background-image:url('ave.jfif');
+  min-height:400px;
+}
+
+.pic3{
+  background-image:url('ultron');
+  min-height:400px;
+}
+
+.pic4{
+  background-image:url('thanos.jpg');
+  min-height:400px;
+}
+
+.pic5{
+  background-image:url('aven1.jpg');
+  min-height:400px;
+}
+
+
+.pic6{
+  background-image:url('a.png');
+  min-height:100%;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.white{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.black{
+  background-color:#282e34;
+  color:white;
+  text-align: justify;
+}
+
+.end{
+  background-color:#282e34;
+  color:#ddd;
+  padding: 10px 80px;
+  font-size: 10px;
+  text-align: right;
+
+}
+
+.titel{
+  color: lightblue;
+}
+
+
+.txt{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:black;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.txt .frame{
+  background-color:#111;
+  color:white;
+  padding:20px;
+  opacity: 80%;
+}
+
+.txt .frame.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pic1, .pic2, .pic3, .pic4, .pic5, .pic6{
+    background-attachment:scroll;
+  }
+}

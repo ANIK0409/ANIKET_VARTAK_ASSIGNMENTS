@@ -1,0 +1,18 @@
+
+		table,th,td{
+			border: 1px solid black;
+			border-color: forestgreen;
+		}
+		th{
+			background-color: forestgreen;
+		}
+
+		td.savings {
+			font-family:Cursive, Lucida Handwriting;
+  			
+  		}
+  		th{
+  			color: white;
+  		}
+
+
