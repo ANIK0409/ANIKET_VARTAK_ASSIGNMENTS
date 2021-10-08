@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q17</title>
+
+
+	
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+    var n = prompt("Enter number of elements in the list : ")
+    var list = [n];
+    for(var i=0;i<n;i++){
+        list[i] = prompt("Enternumber "+(i+1)+": ")
+    }
+    var rot = prompt("Enter number of rotations");
+    var realrot = (rot%n)
+
+    function rotate(arraybyone){
+        //len = arraybyone.length;
+        var temp = arraybyone[0];
+        for(var i = 0;i<(n-1);i++){
+            arraybyone[i] = arraybyone[(i+1)];
+        }
+        arraybyone[(n-1)]=temp;
+        return arraybyone;
+    }
+
+    var rotating = list;
+    for(var i = 0; i < realrot; i++){
+        rotating = rotate(rotating);
+    }
+
+    document.write(rotating);
+
+</script>
+
+<!script src = "extjs.js"><!/script>
+
+</body>
+</html>
+

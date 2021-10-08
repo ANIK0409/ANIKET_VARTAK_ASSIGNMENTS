@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q7</title>
+
+
+	
+
+</head>
+<body>
+	
+
+
+<div>
+	<p>Enter Currency in $</p>
+	<input type="text" name="doller" id="inp" style="width: 200px;">
+	<br><p>Convert into:</p>
+	<button onclick="convert(74.28)">INR</button>
+	<button onclick="convert(109.14)">YEN</button>
+	<button onclick="convert(0.84)">EURO</button>
+	<button onclick="convert(0.72)">Pound Sterling</button>
+	<p id="test" style="border: 1px solid brown; width: 200px;"><br></p>
+</div>
+
+
+<script type="text/javascript">
+		function convert(a){
+			//document.write(1234)
+			var doller = document.getElementById("inp").value;
+			document.getElementById("test").innerHTML = (doller*a).toFixed(2);
+		}
+</script>
+
+<!script src = "extjs.js"><!/script>
+
+</body>
+</html>

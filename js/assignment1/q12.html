@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q12</title>
+
+
+	
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+	var str = "dgfbjsjsakdjdbkaka";
+	var spa = str.replace(/a/g,",");
+
+	document.write("Original String : ",str);
+	//var spa = str.split("a")
+	//document.write(spa,"<br>");
+
+	var spb = spa.replace(/b/g,",");
+	//document.write(spb,"<br>");
+
+	var filter = spb.split(",")
+
+	var lenfilter = filter.length;
+
+	//document.write("<br>",lenfilter)
+
+	var maxln = 0;
+	var maxid = 0;
+
+	for (var i =0; i<lenfilter;i++){
+		if(filter[i].length>maxln){
+			maxln = filter[i].length;
+			maxid = i
+		}
+
+
+	}
+
+	document.write("<br>Longest token without a or b is : ",filter[maxid]);
+
+
+
+	
+</script>
+
+<!script src = "extjs.js"><!/script>
+
+</body>
+</html>
+

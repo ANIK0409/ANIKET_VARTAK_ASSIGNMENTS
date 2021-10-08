@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q3</title>
+
+	<script type="text/javascript">
+
+		a = [5,7,11,3,2,9]
+
+		function find(arr,test){
+			var flag = 0;
+			while(test(arr[flag])!=true){
+				flag++;
+			}
+			return arr[flag];
+		}
+
+		function isEven(num) {
+			return (num % 2 == 0);
+		}
+
+		answer = find(a,isEven);
+
+		document.write(answer);
+
+	</script>
+</head>
+<body>
+
+</body>
+<!script src = "extjs.js"><!/script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q16</title>
+
+
+	
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+	var row = prompt("Enter number of rows: ");
+    var col = prompt("Enter number of columns: ");
+
+    var bodyy = document.getElementsByTagName("body")
+
+    var tab = "<table border = 1px>"
+
+    for(var i = 0; i < row ; i++){
+        tab = tab+"<tr>";
+        for(var j=0; j<col ; j++){
+            tab = tab + "<th>" + (i+1)+","+(j+1)+"</th>"
+        }
+        tab = tab + "</tr>"
+
+    }
+
+    tab = tab + "</table>"
+
+    bodyy[0].innerHTML = tab
+    //var inn = bodyy.innerHTML;
+
+
+
+    //document.write(inn)
+
+
+
+</script>
+
+<!script src = "extjs.js"><!/script>
+
+</body>
+</html>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q10</title>
+
+
+	
+
+</head>
+<body>
+	
+
+
+
+
+
+<script type="text/javascript">
+
+var a = 0;
+var b = 0;
+var c = 1;
+
+for(var i = 0; i<100; i++){
+	document.write(i+1,")\t",c,"<br>");
+	a = b;
+	b = c;
+	c = a+ b;
+}
+	
+</script>
+
+<!script src = "extjs.js"><!/script>
+
+</body>
+</html>
+
+
+<!-- 
+As your number gets bigger, your lose precision, the maximum safe number in JavaScript is actually 
+Number.MAX_SAFE_INTEGER === 9007199254740991
+
+For every extra bit that is required you lose 1 bit of precision because the last bit is assumed to be zero.
+
+according to IEEE754 354224848179262000000 equals in binary to:
+
+0 10001000011 0011001100111101101101110110101001111100010110010110
+The exponent, 10001000011 is 1091, which results to 68 if you subtract 1023.
+This means you are using 68 bits to represent your significant, since their are only 52 bits available for the significant, the last 16 bits are assumed to be zero. Any calculations that fall in those 16 bits will have no effect.
+-->

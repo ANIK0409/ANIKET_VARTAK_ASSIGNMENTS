@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q2</title>
+
+	<script type="text/javascript">
+
+		
+		var val = prompt("Enter value :")
+		function compose(f1,f2) {
+			
+			return f1(f2(val));
+		}
+
+		var f1 =function square(x){return x*x;}
+		var f2 =function double(x){return x*2}
+
+		
+
+		var answer = compose(f2,f1)
+
+		document.write(answer);
+
+		var answer = compose(f1,f2)
+
+		document.write("<br>",answer)		
+
+	</script>
+</head>
+<body>
+
+</body>
+<!script src = "extjs.js"><!/script>
+</html>

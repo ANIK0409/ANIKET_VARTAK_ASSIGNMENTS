@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q1 </title>
+
+	<script type="text/javascript">
+		function composedValue(f1,f2,value) {
+			return f1(f2(value));
+		}
+
+		function square(x){return x*x;}
+		function double(x){return x*2}
+
+		var val = prompt("Enter value :")
+
+		var answer = composedValue(square,double,val)
+
+		document.write(answer);
+		
+
+	</script>
+</head>
+<body>
+
+</body>
+<!script src = "extjs.js"><!/script>
+</html>

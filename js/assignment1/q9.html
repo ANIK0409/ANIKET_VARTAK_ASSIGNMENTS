@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q9</title>
+
+
+	
+
+</head>
+<body>
+	
+
+
+
+
+
+<script type="text/javascript">
+
+	const arrA = ["a","b","c","d","e"];
+	document.write("First array A : <br>[");
+	var la = arrA.length;
+	for(var i =0; i<la;i++){
+	document.write(arrA[i],",\t ");
+		}
+	document.write("]<br>Second array B :<br>[")
+	const arrB = [1,2,3,4,5,6];
+
+	var lb = arrB.length;
+	for(var i =0; i<lb;i++){
+	document.write(arrB[i],",\t ");
+		}
+	document.write("]")
+
+	var lc = la+lb;
+	var lcf = 0;
+	var lmax = Math.max(la,lb);
+	document.write(lmax)
+	var arrC = [lc]
+
+	for(var i =0; i< lmax; i++){
+		if(i<la){
+			arrC[lcf] = arrA[i];
+			lcf++;
+		}
+		if(i<lb){
+			arrC[lcf] = arrB[i];
+			lcf++;
+		}
+
+
+	}
+
+	document.write("<br>New array C :<br>[")
+	for(var i =0; i<lc;i++){
+	document.write(arrC[i],",\t ");
+		}
+	document.write("]")
+	
+</script>
+
+<!script src = "extjs.js"><!/script>
+
+</body>
+</html>

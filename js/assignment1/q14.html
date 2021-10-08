@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q14</title>
+
+
+	
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+var arr = [100];
+for(var i =0;i<100;i++){
+    var temp = Math.floor(Math.random()*1000)
+    arr[i] = temp;
+}
+var ln = arr.length;	
+//document.write(arr)
+
+var large = 0;
+var small = 0;
+var odd = 0;
+var even = 0;
+var sum = 0;
+
+for(var i = 0; i< ln;i++){
+    if(arr[i]>large){
+        large= arr[i];
+    }
+    if(arr[i]<small){
+        small = arr[i];
+    }
+    if(arr[i]%2 == 0){
+        even+=1;
+    }
+    if(arr[i]%2!=0){
+        odd+=1;
+    }
+    sum+=arr[i];
+}
+
+var avg = (sum/ln).toFixed(2);
+var oddeven = Math.max(odd,even);
+if(oddeven==odd){var odev = "odd";}
+else{var odev = "even";}
+document.write("<br>");
+document.write("<br>The Largest number is : ",large);
+document.write("<br>The smallest number is : ",small);
+document.write("<br>The ",odev," numbers are high in count.");
+document.write("<br>The sum of all is : ",sum);
+document.write("<br>The average of all is : ",avg);
+
+</script>
+
+<!script src = "extjs.js"><!/script>
+
+</body>
+</html>
+

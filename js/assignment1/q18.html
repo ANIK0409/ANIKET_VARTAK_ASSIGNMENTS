@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q18</title>
+
+
+	
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+
+    
+
+    
+
+    var str = prompt("Enter the text : ")
+
+    var words = str.split(" ");
+    
+    var nofwords = words.length;
+
+    var newline = ""
+
+    for(var i = 0; i < nofwords ; i++){
+        var thisword = words[i];
+        var word2 = thisword.slice(0,2)
+        var word3 = thisword.slice(2)
+        var pig = word3+word2+"ay"
+        newline += "\t"+pig
+    }
+    
+    document.write(newline)
+
+</script>
+
+<!script src = "extjs.js"><!/script>
+
+</body>
+</html>
+

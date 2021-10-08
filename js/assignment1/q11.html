@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q11</title>
+
+
+	
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+	var arrA = ["anik",25,"India",true,"2021"];
+
+	var  len = arrA.length;
+
+	document.write("Original array");
+
+
+	document.write("<br>[")
+	for(var i=0;i<len;i++){
+		document.write(arrA[i],",\t");
+	}
+	document.write("]<br>")
+
+
+	for(var i =0; i<(len/2) ; i++){
+		var temp = arrA[i];
+		arrA[i] = arrA[len-i-1];
+		arrA[len-1-i] = temp
+		//document.write(temp,arrA[i],"<br>")
+	}
+
+	document.write("<br>Reversed array;<br>[")
+	for(var i=0;i<len;i++){
+		document.write(arrA[i],",\t");
+	}
+	document.write("]")
+
+
+	
+</script>
+
+<!script src = "extjs.js"><!/script>
+
+</body>
+</html>
+

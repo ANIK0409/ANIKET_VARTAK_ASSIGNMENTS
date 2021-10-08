@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q4 </title>
+
+	<script type="text/javascript">
+		var n = prompt("Enter the number of flips : ")
+		var h = 0
+		var t = 0
+
+		
+		for(var i = 0; i< n ; i++){
+			var coin = Math.random()*2;
+			coin = Math.floor(coin)+1;
+			if(coin==2){
+				h++;
+				//document.write("h<br>")
+			}
+			else{
+				t++;
+				//document.write("t<br>")
+			}
+		}
+		ratio = h/n;
+		ratio = (ratio).toFixed(2)
+		document.write("<br>Heads Ratio : "+ratio)
+	</script>
+</head>
+<body>
+
+</body>
+<!script src = "extjs.js"><!/script>
+</html>

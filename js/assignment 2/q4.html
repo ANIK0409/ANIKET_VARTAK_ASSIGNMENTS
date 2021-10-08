@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q4</title>
+
+	<script type="text/javascript">
+
+		a = [5,7,11,3,2,9]
+
+		function map(arr,fun){
+			var arr2 =[];
+			for(var i =0; i < (arr.length);i++){
+				arr2.push(fun(arr[i]));
+			}
+		return arr2
+		}
+
+		function square(num) {
+			return (num*num);
+		}
+
+		answer = map(a,square);
+
+		document.write("[",answer,"]");
+
+	</script>
+</head>
+<body>
+
+</body>
+<!script src = "extjs.js"><!/script>
+</html>

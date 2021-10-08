@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q13</title>
+
+
+	
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+	var numarray = [1,2,3,4,5];
+
+	document.write("The arrey is : ",numarray,"<br>");
+
+	len = numarray.length;
+	sumfor = 0
+
+	for(var i =0; i<len; i++){
+		sumfor+=numarray[i];
+	}
+	document.write("Using for loop : ", sumfor , "<br>")
+
+
+	var countwhile = 0;
+	var sumwhile = 0;
+	while(countwhile<len){
+		sumwhile+=numarray[countwhile];
+		countwhile++;
+	}
+	document.write("Using while loop : ", sumwhile , "<br>")
+
+
+	var countdowhile = 0;
+	var sumdowhile = 0;
+	do{
+		sumdowhile+=numarray[countdowhile];
+		countdowhile++
+	}while(countdowhile<len);
+	document.write("Using do-while loop : ", sumdowhile , "<br>")
+
+
+	
+</script>
+
+<!script src = "extjs.js"><!/script>
+
+</body>
+</html>
+
