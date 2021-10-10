@@ -2,18 +2,20 @@
 <html>
 <head>
 	<title>q20</title>
-    <style type="text/css">
-        
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="q20.css">
+    
 
 </head>
 <body>
 
-    <form>
+    <div class="body">
+
+    <form name="q20" onsubmit="return false">
         <div>
             <label>Name:</label>
-            <input type="text" name="name" required>
+            <input type="text" name="name" id="name" required>
+
+            <textarea class="message"></textarea>
 
             <br><br>
             <label>Email:</label>
@@ -42,7 +44,7 @@
             <input type="checkbox" name="Tomatos" value="Tomatos" id="Tomatos">
 
             <label for="Mushrooms">Mushrooms:</label>
-            <input type="checkbox" name="Mushrooms" value="Mushrooms" id="Mushrooms">
+            <input type="checkbox" name="Mushrooms" value="Mushrooms" selected="1" id="Mushrooms">
 
 
         </div>
@@ -81,25 +83,16 @@
         <br>
 
         <div>
-            <button type="submit" class="Submit" id="Submit">Submit</button>
-            <button class="Reset" id="Reset">Reset</button>
-            <button class="ShowSummary" id="ShowSummary">Show Summary</button>
+            <!button type="submit" class="Submit" id="Submit" name="Submit"><!/button>
+            <input type="submit" class="Submit" id="Submit" name="Submit">
+            <!button class="Reset" id="Reset" ><!/button>
+            <input type="reset" name="reset"  class="Reset">
+            <button class="ShowSummary" id="ShowSummary" name="ShowSummary">Show Summary</button>
         </div>
     </form>
 
-
-
-   
-
-<script type="text/javascript">
-
-    
-
-
-</script>
-
-<!script src = "extjs.js"><!/script>
-
+<script src = "q20.js"></script>
+</div>
 </body>
 </html>
 

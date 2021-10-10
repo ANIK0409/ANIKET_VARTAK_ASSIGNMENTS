@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q10 </title>
+</head>
+<body>
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+//Q8 & Q9 
+function person(fname,lname,age,skill,dateofbirth,address,married,profession){
+    this.fname=fname;
+    this.lname=lname;
+    this.age=age;
+    this.skill=skill;
+    this.dateofbirth=dateofbirth;
+    this.address=address;
+    this.married=married;
+    this.profession=profession;
+
+}
+
+var amitabh=new person("amitabh", "bachchan",22,['c'],"24/10/1997",{city:"hyberabad",pincode:"521185"},"false","sr analyst")
+
+
+var abhishek = Object.create(amitabh,{
+    'fname':{value:"abhishek"},
+    'age':{value:21},
+    'skill':{value:['html']},
+    'dateofbirth':{value:"8/6/197"},
+    'married':{value:'false'},
+    'profession':{value:'jr analyst'}
+})
+
+
+//aaradhya=new person("aaradhya",20,['python'],"10/5/2000","fresher")
+var aaradhya=Object.create(abhishek,{
+    'fname':{value:'aaradhya'},
+    'age':{value:20},
+    'skill':{value:['python']},
+    'dateofbirth':{value:"10/5/2000"},
+    'skill':{value:"fresher"}
+});
+print=function(){
+    console.log(amitabh);
+    //console.log(abhishek.lname);
+    console.log(abhishek);
+    console.log(aaradhya);
+}();
+
+
+
+
+	</script>
+</body>
+<!script src = "extjs.js"><!/script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q3 </title>
+</head>
+<body>
+
+
+
+
+
+<script type="text/javascript">
+
+	class Rectangle{
+    constructor (width,height)
+    {
+        this.width = width;
+        this.height = height;
+        this.getArea = function()
+        {
+            document.write("Area : " + (this.width*this.height)+ "<br>");
+        };
+    }   
+}
+
+//Rectangle r =new Rectangle(4,5)
+//the above statement throws error because the class cannot be an data type for new variable. the right statement is as follows.
+
+r =new Rectangle(10,5)
+r.getArea()
+
+	</script>
+</body>
+<!script src = "extjs.js"><!/script>
+</html>

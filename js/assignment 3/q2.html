@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q2 </title>
+</head>
+<body>
+
+
+
+
+
+<script type="text/javascript">
+
+	class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
+
+var instance1 = new Rectangle()
+
+instance1.width = 10;
+instance1.height = 6
+
+document.write("Width : ",instance1.width,"\t height : ",instance1.height)
+
+Rectangle.prototype.getArea = function () {
+	return this.height*this.width
+}
+
+document.write("<br>Area : ",instance1.getArea())
+
+	</script>
+</body>
+<!script src = "extjs.js"><!/script>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q11 </title>
+</head>
+<body>
+
+
+
+
+
+<script type="text/javascript">
+
+
+//Q11
+class BankAccount{
+    constructor(accountNumber, accountHolderName, accountBalance)
+    {
+        this.accountNumber = accountNumber;
+        this.accountHolderName = accountHolderName;
+        this.accountBalance = accountBalance;
+        this.getCurrentBalance= function()
+        {
+            document.write("accountNumber:",this.accountNumber,"<br>Account Holder Name : ",this.accountHolderName,"<br>Current Balance :",this.accountBalance);
+        };
+    }
+}
+
+class SavingsAccount extends BankAccount{
+    constructor(accountNumber, accountHolderName, accountBalance, isSalary){
+        super(accountNumber, accountHolderName, accountBalance);
+        this.isSalary = isSalary;
+        this.withdraw =function(amount)
+        {
+            this.accountBalance -= amount;
+            if(accountBalance == 0)
+            return -1;
+        };
+    }
+
+}
+
+class CurrentAccount extends BankAccount {
+    constructor(accountNumber, accountHolderName, accountBalance, odLimit){
+        super(accountNumber, accountHolderName, accountBalance);
+        this.odLimit = odLimit;
+        this.withdraw = function(amount)
+        {
+            this.accountBalance -= amount;
+            if(accountBalance < 0)
+            return -1;
+        };
+    }
+}
+
+var s1 = new SavingsAccount(420, "Narubhai Jumlawala", 1700000, 1);
+s1.withdraw(200000);
+s1.getCurrentBalance();
+
+
+
+
+
+
+
+	</script>
+</body>
+<!script src = "extjs.js"><!/script>
+</html>
