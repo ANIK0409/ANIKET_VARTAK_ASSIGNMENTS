@@ -1,0 +1,26 @@
+
+<div *ngIf="!edit">
+<h1 style="text-align: center;">ALL ADVERTISEMENTS</h1>
+<table style="width: 80%; align-content: center;" >
+    <tr>
+        <th>TITLE</th>
+        <th>NAME</th>
+        <th>CATEGORY</th>
+        <th>DESCRIPTION</th>
+        <th colspan="2"></th>
+    </tr>
+    <tr *ngFor="let add of advt">
+        <td >{{add.title}}</td>
+        <td>{{add.name}}</td>
+        <td>{{add.category}}</td>
+        <td>{{add.description}}</td>
+        <td class="edit" (click)="editthis(add)" ><button class="btn" style="color:darkblue">EDIT</button></td>
+        <td class="delete" (click)="deletethis(add)"><button class="btn" style="color:red">DELETE</button></td>
+    </tr>
+</table>
+
+<button (click)=formagain() class="btn custom-btn">Create another Advertisement</button>
+
+</div>
+
+<app-edit-product *ngIf ="edit" (cancel)=noedit()></app-edit-product>
